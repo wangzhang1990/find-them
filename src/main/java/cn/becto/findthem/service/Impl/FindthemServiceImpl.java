@@ -1,19 +1,23 @@
 package cn.becto.findthem.service.Impl;
 
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import org.apache.http.HttpEntity;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.apache.solr.client.solrj.SolrQuery;
+import org.apache.solr.client.solrj.SolrQuery.ORDER;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
+import org.apache.solr.client.solrj.response.QueryResponse;
+import org.apache.solr.common.SolrDocument;
+import org.apache.solr.common.SolrDocumentList;
 import org.apache.solr.common.SolrInputDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,6 +26,7 @@ import org.springframework.stereotype.Service;
 import com.alibaba.fastjson.JSON;
 
 import cn.becto.findthem.pojo.Answer;
+import cn.becto.findthem.pojo.Author;
 import cn.becto.findthem.pojo.FindthemResult;
 import cn.becto.findthem.pojo.ResultData;
 import cn.becto.findthem.service.FindthemService;
@@ -112,6 +117,35 @@ public class FindthemServiceImpl implements FindthemService {
 			}
 		}
 		return FindthemResult.ok(200, "已无新数据", null);
+	}
+
+	@Override
+	public FindthemResult findthemByKeyword(String keyword, Integer page) throws Exception {
+		SolrQuery query = new SolrQuery();
+		query.set("q", "answer_content:" + keyword);
+		//每页固定显示5条记录
+		query.setRows(5);
+		query.setStart(5 * (page - 1));
+		query.addSort("answer_updated", ORDER.desc);
+		
+		QueryResponse response = solrServer.query(query);
+		//结果封装到ResultData对象中
+		ResultData resultData = new ResultData();
+		List<Answer> answerList = new ArrayList<Answer>();
+		SolrDocumentList results = response.getResults();
+		for (SolrDocument solrDocument : results) {
+			Answer answer = new Answer();
+			Author author = new Author();
+			author.setName(solrDocument.get("answer_name").toString());
+			author.setUrl_token(solrDocument.get("answer_token").toString());
+			answer.setId(solrDocument.get("id").toString());
+			answer.setUpdated_time(Long.parseLong(solrDocument.get("answer_updated").toString()));
+			answer.setContent(solrDocument.get("answer_content").toString());
+			answer.setAuthor(author);
+			answerList.add(answer);
+		}
+		resultData.setData(answerList);
+		return FindthemResult.ok(200, "查找完毕", resultData);
 	}
 
 }

@@ -11,6 +11,8 @@ public interface FindthemService {
 
 	FindthemResult syncData() throws Exception;
 
+	FindthemResult findthemByKeyword(String keyword, Integer page) throws Exception;
+
 
 	
 }

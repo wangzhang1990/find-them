@@ -4,6 +4,14 @@ public class Paging {
 	private boolean is_end;
 	private boolean is_start;
 	private int totals;
+	private Integer page;
+	
+	public Integer getPage() {
+		return page;
+	}
+	public void setPage(Integer page) {
+		this.page = page;
+	}
 	public boolean isIs_end() {
 		return is_end;
 	}
