@@ -22,6 +22,5 @@
 	
 	<context:property-placeholder
 		location="classpath:resource/*.properties" />
-	<task:annotation-driven/>
-	
+	<task:annotation-driven/>	
 </beans>

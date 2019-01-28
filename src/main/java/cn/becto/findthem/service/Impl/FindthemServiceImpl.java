@@ -30,6 +30,7 @@ import cn.becto.findthem.pojo.Author;
 import cn.becto.findthem.pojo.FindthemResult;
 import cn.becto.findthem.pojo.ResultData;
 import cn.becto.findthem.service.FindthemService;
+import cn.becto.findthem.utils.StringReplaceUtils;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
@@ -140,7 +141,12 @@ public class FindthemServiceImpl implements FindthemService {
 			author.setUrl_token(solrDocument.get("answer_token").toString());
 			answer.setId(solrDocument.get("id").toString());
 			answer.setUpdated_time(Long.parseLong(solrDocument.get("answer_updated").toString()));
-			answer.setContent(solrDocument.get("answer_content").toString());
+			
+			//图片连接的修复
+			String contentString = solrDocument.get("answer_content").toString();
+			String fixedContentString = StringReplaceUtils.imgSrcFix(contentString);
+			
+			answer.setContent(fixedContentString);
 			answer.setAuthor(author);
 			answerList.add(answer);
 		}

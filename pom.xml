@@ -124,7 +124,7 @@
 					<path>/</path>
 					<url>http://106.13.37.108:8081/manager/text</url>
 					<username>tomcat</username>
-					<password>tomcat</password>
+					<password>123</password>
 				</configuration>
 			</plugin>
 			<plugin>
