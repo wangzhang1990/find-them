@@ -64,7 +64,7 @@
 			<div style="border: 3px solid red; width: 1000px">
 				<h1>
 					id：<a
-						href="https://www.zhihu.com/people/${ answer.author.url_token }/activities">${ answer.author.name }</a>
+						href="https://www.zhihu.com/question/275359100/answer/${ answer.id }">${ answer.author.name }</a>
 				</h1>
 				<jsp:setProperty property="time" name="dateObject"
 					value="${ answer.updated_time * 1000 }" />
