@@ -20,9 +20,9 @@ public class FindthemController {
 	private FindthemService findthemService;
 	
 	/*
-	 * 更新solr库
+	 * 更新solr库,临时入口
 	 */
-	//@RequestMapping("/sync")
+	@RequestMapping("/sync/temporary")
 	public FindthemResult syncData() throws Exception {
 		return findthemService.syncData();
 	}

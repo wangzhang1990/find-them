@@ -14,7 +14,6 @@ public class SyncTask {
 	
 	@Scheduled(cron = "0 0 0/1 * * ?")
 	public void syncData() throws Exception {
-		System.out.println("................................................");
 		findthemService.syncData();
 	}
 }

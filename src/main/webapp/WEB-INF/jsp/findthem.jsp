@@ -28,6 +28,9 @@
 		$("[name='page']").val($("[name='page_located']").val());
 		$("form").submit();
 	}
+	function keywordInit() {
+		$("[name='keyword']").val("");
+	}
 </script>
 </head>
 <body>
@@ -37,14 +40,14 @@
 		</h1>
 		<h4>由于时间缘故，前端我没有做，大家先用这个原始页面将就一下，等有时间的时候，我会使用bootstrap把它做漂亮一些</h4>
 		<h4>数据每小时更新一次，可以更新最新发布/修改的回答</h4>
-		<h4>点击用户名可进入知乎主页，匿名用户无解。部分非匿名用户名显示为【知乎用户】，可能是因为近期改过id导致(我的知乎就是这样)，暂时无解</h4>
-		<h5><font color="red">数据是最新的，但是last updated的时间显示不正确，预计今晚修复</font></h5>
+		<h5><font color="red"></font></h5>
 		<hr>
 	</div>
 	<form action="find">
-		关键词：<input type="text" name="keyword" value="${ keyword }"> <input
+		关键词：<input type="text" name="keyword" value="${ keyword }" onfocus="keywordInit()">
+		<input
 			type="hidden" name="page" value="1"> <input type="submit"
-			value="搜索">
+			value="搜索">&nbsp&nbsp&nbsp<font color="red">建议单词搜索，比如"西安"。尽量不要用组合词，如"陕西西安"，可能会漏结果。</font>
 	</form>
 	<span>当前第${ page }页=======>>></span>
 	<a href="javascript:void(0)" onclick="previousPage()">上一页</a><<==>>
@@ -54,7 +57,7 @@
 	<a href="javascript:void(0)" onclick="locatePage()">跳转</a>
 	<br>
 	<hr>
-	<a href="javascript:void(0)">点击id可以进入答主主页哦~暂无法进入匿名答主主页</a>
+	<font color="red">点击id可以进入答主答题页面哦~~</font>
 	<div>
 		<jsp:useBean id="dateObject" class="java.util.Date" scope="page"></jsp:useBean>
 		<c:forEach items="${ result.data }" var="answer">

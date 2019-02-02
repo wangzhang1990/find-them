@@ -151,6 +151,7 @@ public class FindthemServiceImpl implements FindthemService {
 			answerList.add(answer);
 		}
 		resultData.setData(answerList);
+		
 		return FindthemResult.ok(200, "查找完毕", resultData);
 	}
 
