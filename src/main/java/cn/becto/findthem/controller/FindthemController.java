@@ -40,6 +40,6 @@ public class FindthemController {
 		model.addAttribute("page", page);
 		model.addAttribute("keyword", keyword);
 		
-		return "findthem";
+		return "findthem2";
 	}
 }
