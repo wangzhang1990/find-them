@@ -117,6 +117,7 @@ public class FindthemServiceImpl implements FindthemService {
 				break;
 			}
 		}
+		//归还连接池
 		jedis.close();
 		return FindthemResult.ok(200, "已无新数据", null);
 	}
