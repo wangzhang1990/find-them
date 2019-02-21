@@ -23,21 +23,21 @@ https://www.zhihu.com/question/275359100
 
 
 
-version1.0
+#### version1.0
 
 仅支持显示按发布/修改间排排序，最近500条的知乎回答；
 暂时使用字符串匹配的方式匹配关键字。
 
-version1.1
+#### version1.1
 
 加入了solr搜索引擎，搜索更精确；
 完善了前端的上/下页翻转，按页跳转功能；
 
-version1.2
+#### version1.2
 增加了每小时更新索引库数据功能，自此每小时都会刷新一次最新数据。
 修复last_updated显示错误bug
 修复图片显示不出，并大片留白bug
 
-version2.1
+#### version2.1
 统一了与个站的风格
 修复了jedis连接池导致的自动更新数据数次后卡死的bug
