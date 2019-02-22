@@ -12,16 +12,16 @@
 <link rel="profile" href="https://gmpg.org/xfn/11">
 
 <title>知乎月老 &#8211; BECTO</title>
-<link rel='dns-prefetch' href='//45.40.249.19' />
+<link rel='dns-prefetch' href='//www.becto.cn' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml"
-	title="BECTO &raquo; Feed" href="http://45.40.249.19/?feed=rss2" />
+	title="BECTO &raquo; Feed" href="http://www.becto.cn/?feed=rss2" />
 <link rel="alternate" type="application/rss+xml"
 	title="BECTO &raquo; 评论Feed"
-	href="http://45.40.249.19/?feed=comments-rss2" />
+	href="http://www.becto.cn/?feed=comments-rss2" />
 <link rel="alternate" type="application/rss+xml"
 	title="BECTO &raquo; wordpress分类目录Feed"
-	href="http://45.40.249.19/?feed=rss2&#038;cat=15" />
+	href="http://www.becto.cn/?feed=rss2&#038;cat=15" />
 <script type="text/javascript">
 			window._wpemojiSettings = {
 				"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/",
@@ -29,7 +29,7 @@
 				"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/",
 				"svgExt": ".svg",
 				"source": {
-					"concatemoji": "http:\/\/45.40.249.19\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.3"
+					"concatemoji": "http:\/\/www.becto.cn\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.3"
 				}
 			};
 			! function(a, b, c) {
@@ -87,7 +87,7 @@ img.wp-smiley, img.emoji {
 }
 </style>
 <link rel='stylesheet' id='astra-theme-css-css'
-	href='http://45.40.249.19/wp-content/themes/astra/assets/css/minified/style.min.css?ver=1.6.8'
+	href='http://www.becto.cn/wp-content/themes/astra/assets/css/minified/style.min.css?ver=1.6.8'
 	type='text/css' media='all' />
 <style id='astra-theme-css-inline-css' type='text/css'>
 html {
@@ -413,11 +413,11 @@ body, .ast-separate-container {
 @font-face {
 	font-family: "Astra";
 	src:
-		url(http://45.40.249.19/wp-content/themes/astra/assets/fonts/astra.woff)
+		url(http://www.becto.cn/wp-content/themes/astra/assets/fonts/astra.woff)
 		format("woff"),
-		url(http://45.40.249.19/wp-content/themes/astra/assets/fonts/astra.ttf)
+		url(http://www.becto.cn/wp-content/themes/astra/assets/fonts/astra.ttf)
 		format("truetype"),
-		url(http://45.40.249.19/wp-content/themes/astra/assets/fonts/astra.svg#astra)
+		url(http://www.becto.cn/wp-content/themes/astra/assets/fonts/astra.svg#astra)
 		format("svg");
 	font-weight: normal;
 	font-style: normal;
@@ -628,23 +628,23 @@ body, .ast-separate-container {
 	}
 </script>
 <link rel='stylesheet' id='astra-menu-animation-css'
-	href='http://45.40.249.19/wp-content/themes/astra/assets/css/minified/menu-animation.min.css?ver=1.6.8'
+	href='http://www.becto.cn/wp-content/themes/astra/assets/css/minified/menu-animation.min.css?ver=1.6.8'
 	type='text/css' media='all' />
 <link rel='stylesheet' id='wp-block-library-css'
-	href='http://45.40.249.19/wp-includes/css/dist/block-library/style.min.css?ver=5.0.3'
+	href='http://www.becto.cn/wp-includes/css/dist/block-library/style.min.css?ver=5.0.3'
 	type='text/css' media='all' />
 <!--[if IE]>
-<script type='text/javascript' src='http://45.40.249.19/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=1.6.8'></script>
+<script type='text/javascript' src='http://www.becto.cn/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=1.6.8'></script>
 <script type='text/javascript'>
 flexibility(document.documentElement);
 </script>
 <![endif]-->
 <link rel='https://api.w.org/'
-	href='http://45.40.249.19/index.php?rest_route=/' />
+	href='http://www.becto.cn/index.php?rest_route=/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD"
-	href="http://45.40.249.19/xmlrpc.php?rsd" />
+	href="http://www.becto.cn/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml"
-	href="http://45.40.249.19/wp-includes/wlwmanifest.xml" />
+	href="http://www.becto.cn/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 5.0.3" />
 <style type="text/css">
 .recentcomments a {
@@ -687,7 +687,7 @@ flexibility(document.documentElement);
 									itemtype="https://schema.org/Organization">
 									<div class="ast-site-title-wrap">
 										<span class="site-title" itemprop="name"> <a
-											href="http://45.40.249.19/" rel="home" itemprop="url">
+											href="http://www.becto.cn/" rel="home" itemprop="url">
 												BECTO </a>
 										</span>
 										<p class="site-description" itemprop="description">
@@ -719,17 +719,17 @@ flexibility(document.documentElement);
 										<ul
 											class="main-header-menu ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border astra-menu-animation-fade ">
 											<li class="page_item page-item-40"><a
-												href="http://45.40.249.19/?page_id=40">小工具</a></li>
+												href="http://www.becto.cn/?page_id=40">小工具</a></li>
 											<li class="page_item page-item-11"><a
-												href="http://45.40.249.19/?page_id=11">知乎月老</a></li>
+												href="http://www.becto.cn/?page_id=11">知乎月老</a></li>
 											<li class="page_item page-item-13 current_page_parent">
-												<a href="http://45.40.249.19/?page_id=13">Blog</a>
+												<a href="http://www.becto.cn/?page_id=13">Blog</a>
 											</li>
 											<li class="page_item page-item-2"><a
-												href="http://45.40.249.19/">首页</a>
+												href="http://www.becto.cn/">首页</a>
 												<ul class='children sub-menu'>
 													<li class="page_item page-item-15"><a
-														href="http://45.40.249.19/?page_id=15">Contact Me</a></li>
+														href="http://www.becto.cn/?page_id=15">Contact Me</a></li>
 												</ul></li>
 										</ul>
 									</div>
@@ -921,9 +921,9 @@ flexibility(document.documentElement);
 			/* ]]> */
 		</script>
 	<script type='text/javascript'
-		src='http://45.40.249.19/wp-content/themes/astra/assets/js/minified/style.min.js?ver=1.6.8'></script>
+		src='http://www.becto.cn/wp-content/themes/astra/assets/js/minified/style.min.js?ver=1.6.8'></script>
 	<script type='text/javascript'
-		src='http://45.40.249.19/wp-includes/js/wp-embed.min.js?ver=5.0.3'></script>
+		src='http://www.becto.cn/wp-includes/js/wp-embed.min.js?ver=5.0.3'></script>
 
 </body>
 
